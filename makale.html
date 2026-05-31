@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><title>Makale</title></head>
+<body>
+<div style='position:fixed;top:0;left:0;height:4px;background:#36f' id='bar'></div>
+<aside style='position:sticky;top:10px'>İçindekiler</aside>
+<article><h1>Makale</h1><p>İçerik...</p><div style='height:2000px'></div></article>
+<script>
+window.onscroll=()=>{let h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%'}
+</script>
+</body></html>

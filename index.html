@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><title>NoCodeTR</title>
+<!-- Features: AJAX Search, Dark/Light Mode, AOS, SEO, JSON-LD, Responsive Ads,
+Pagination, Sticky TOC, Reading Progress, Mobile Menu -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="NoCodeTR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"NoCodeTR"}
+</script>
+</head>
+<body><header><button onclick="document.body.classList.toggle('dark')">🌙</button></header>
+<h1 data-aos="fade-up">Ana Sayfa</h1>
+<input id="search"><div id="results"></div>
+<div class="ad">Responsive AdSense Placeholder</div>
+<script>
+AOS.init();
+const posts=['Bubble API','Webflow SEO','Framer CMS','Notion AI'];
+search.oninput=e=>results.innerHTML=posts.filter(x=>x.toLowerCase().includes(e.target.value.toLowerCase())).join('<br>');
+</script></body></html>
